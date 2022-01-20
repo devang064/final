@@ -1,11 +1,4 @@
-//import 'dart:html';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-
-//import 'package:flutter/services.dart';
-//import 'package:flutter/src/painting/image_provider.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -70,7 +63,11 @@ class MyApp extends StatelessWidget {
               Container(
                 height: 385.15,
                 width: 448,
-                child: Image.asset('assets/images/kody1.png'),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('https://github.com/devang064/app1.git'),
+                  ),
+                ),
               ),
               SizedBox(height: 25),
               Padding(
@@ -109,12 +106,6 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(fontSize: 17),
                 ),
               ),
-              //      ListTile(
-              //      leading: FlutterLogo(size: 34.42),
-              //    title: Text('Step 3',style: TextStyle(fontSize:19 ),),
-              //  subtitle: Text('Get your cirtification',style: TextStyle(fontSize:17 ),),
-
-              //   ),
               ListTile(
                 leading: CircleAvatar(
                     backgroundImage: AssetImage("assets/images/kody2.png")),
@@ -133,4 +124,3 @@ class MyApp extends StatelessWidget {
         ));
   }
 }
-

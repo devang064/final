@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(16),
                 child: Text(
-                  'Get your AePS cirtification',
+                  'Get your AePS certification',
                   style: TextStyle(fontSize: 24),
                 ),
               ),
